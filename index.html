@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Étoilée — Expérience Gastronomique</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="topbar" aria-label="Navigation principale">
+      <div class="brand">Maison Étoilée</div>
+      <nav>
+        <ul>
+          <li><a href="#experiences">Expériences</a></li>
+          <li><a href="#menus">Menus</a></li>
+          <li><a href="#lieu">Le lieu</a></li>
+          <li><a href="#reservation" class="btn btn-primary">Réserver</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <section id="hero" class="section hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Restaurant 5 étoiles — Paris</p>
+        <h1 id="hero-title">Une soirée pensée comme un service de conciergerie.</h1>
+        <p>
+          De la première intention à la confirmation de table, chaque étape est conçue
+          pour vous guider vers l'expérience parfaite.
+        </p>
+        <div class="actions">
+          <a href="#reservation" class="btn btn-primary">Réserver une table</a>
+          <a href="#experiences" class="btn btn-secondary">Découvrir l'expérience</a>
+        </div>
+      </section>
+
+      <section id="experiences" class="section" aria-labelledby="exp-title">
+        <h2 id="exp-title">Choisissez votre expérience</h2>
+        <p class="section-intro">Point d'entrée UX: choisissez votre intention en un clic.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Dîner Signature</h3>
+            <p>Pour une première découverte raffinée et sans friction.</p>
+            <a href="#reservation">Choisir ce parcours</a>
+          </article>
+          <article class="card">
+            <h3>Menu Dégustation</h3>
+            <p>Parcours gourmet avec recommandations accords mets-vins.</p>
+            <a href="#reservation">Choisir ce parcours</a>
+          </article>
+          <article class="card">
+            <h3>Célébration</h3>
+            <p>Anniversaire, proposition, moment d'exception sur mesure.</p>
+            <a href="#reservation">Choisir ce parcours</a>
+          </article>
+          <article class="card">
+            <h3>Privatisation</h3>
+            <p>Événement privé ou corporate avec accompagnement dédié.</p>
+            <a href="#reservation">Choisir ce parcours</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="preuves" class="section" aria-labelledby="proof-title">
+        <h2 id="proof-title">Preuves de prestige</h2>
+        <ul class="proof-list">
+          <li>⭐⭐⭐⭐⭐ Distinction culinaire internationale</li>
+          <li>Chef invité dans les grands guides gastronomiques</li>
+          <li>Service noté excellence pour l'accueil et la personnalisation</li>
+        </ul>
+      </section>
+
+      <section id="menus" class="section" aria-labelledby="menu-title">
+        <h2 id="menu-title">Menus et philosophie</h2>
+        <div class="split">
+          <article>
+            <h3>Philosophie</h3>
+            <p>
+              Cuisine de saison, produits sourcés localement, narration culinaire en 5 temps.
+            </p>
+          </article>
+          <article>
+            <h3>Transparence</h3>
+            <p>
+              Allergènes, préférences alimentaires et demandes particulières prises en charge dès la réservation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="lieu" class="section" aria-labelledby="place-title">
+        <h2 id="place-title">Le lieu et l'expérience sur place</h2>
+        <ul>
+          <li>Salon principal, table du chef, espace privé</li>
+          <li>Accès voiturier et parking à proximité</li>
+          <li>Horaires: mardi à dimanche, 19h00 – 23h30</li>
+        </ul>
+      </section>
+
+      <section id="reservation" class="section reservation" aria-labelledby="book-title">
+        <h2 id="book-title">Réservation guidée en 5 étapes</h2>
+        <ol>
+          <li>Date et heure</li>
+          <li>Nombre de convives</li>
+          <li>Occasion</li>
+          <li>Préférences</li>
+          <li>Confirmation</li>
+        </ol>
+        <form class="booking-form" action="#" method="post">
+          <label>
+            Date
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            Heure
+            <input type="time" name="time" required />
+          </label>
+          <label>
+            Convives
+            <input type="number" name="guests" min="1" max="20" required />
+          </label>
+          <label>
+            Occasion
+            <select name="occasion">
+              <option>Dîner</option>
+              <option>Célébration</option>
+              <option>Business</option>
+              <option>Autre</option>
+            </select>
+          </label>
+          <label>
+            Préférences / Allergies
+            <textarea name="notes" rows="3"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Confirmer la demande</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="section footer">
+      <p><strong>Maison Étoilée</strong> — Service conciergerie: +33 1 00 00 00 00</p>
+      <p>FAQ: annulation, retard, accessibilité, demandes spéciales.</p>
+    </footer>
+  </body>
+</html>
